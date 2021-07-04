@@ -1,0 +1,86 @@
+[33mcommit 5bd44301da8ef417701859f589326e8de769cefa[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: ccorsi-code <ccorsimx@gmail.com>
+Date:   Sat Jun 19 22:31:01 2021 -0500
+
+    actualizado latch.pd
+
+[1mdiff --git a/latch.pd b/latch.pd[m
+[1mindex 2593f32..ea31917 100644[m
+[1m--- a/latch.pd[m
+[1m+++ b/latch.pd[m
+[36m@@ -1,54 +1,54 @@[m
+ #N canvas 1409 122 450 300 12;[m
+[31m-#N canvas 841 235 450 404 nor 0;[m
+[32m+[m[32m#N canvas 821 219 450 404 nor 0;[m
+ #X obj 111 45 inlet;[m
+ #X obj 263 45 inlet;[m
+ #X obj 111 233 ||, f 17;[m
+ #X floatatom 111 299 5 0 0 0 - - -;[m
+ #X obj 111 324 outlet;[m
+ #X obj 111 259 != 1;[m
+[31m-#X obj 111 207 i;[m
+[31m-#X obj 111 98 t f i, f 17;[m
+[31m-#X obj 226 207 i;[m
+[31m-#X connect 0 0 7 0;[m
+[31m-#X connect 1 0 8 0;[m
+[32m+[m[32m#X obj 226 207 f;[m
+[32m+[m[32m#X obj 111 207 f;[m
+[32m+[m[32m#X obj 111 98 t f f, f 17;[m
+[32m+[m[32m#X connect 0 0 8 0;[m
+[32m+[m[32m#X connect 1 0 6 0;[m
+ #X connect 2 0 5 0;[m
+ #X connect 3 0 4 0;[m
+ #X connect 5 0 3 0;[m
+[31m-#X connect 6 0 2 0;[m
+[31m-#X connect 7 0 6 0;[m
+[31m-#X connect 7 1 8 0;[m
+[31m-#X connect 8 0 2 1;[m
+[32m+[m[32m#X connect 6 0 2 1;[m
+[32m+[m[32m#X connect 7 0 2 0;[m
+[32m+[m[32m#X connect 8 0 7 0;[m
+[32m+[m[32m#X connect 8 1 6 0;[m
+ #X restore 82 109 pd nor;[m
+ #X f 10;[m
+ #X obj 82 78 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1[m
+ ;[m
+ #X floatatom 82 175 5 0 0 0 - - -;[m
+[31m-#N canvas 841 235 450 404 nor 1;[m
+[32m+[m[32m#N canvas 1448 255 450 404 nor 0;[m
+ #X obj 111 45 inlet;[m
+ #X obj 263 45 inlet;[m
+ #X obj 111 233 ||, f 17;[m
+ #X floatatom 111 299 5 0 0 0 - - -;[m
+ #X obj 111 324 outlet;[m
+ #X obj 111 259 != 1;[m
+[31m-#X obj 111 207 i;[m
+[31m-#X obj 111 98 t f i, f 17;[m
+[31m-#X obj 226 207 i;[m
+[31m-#X connect 0 0 7 0;[m
+[31m-#X connect 1 0 8 0;[m
+[32m+[m[32m#X obj 111 207 f;[m
+[32m+[m[32m#X obj 226 207 f;[m
+[32m+[m[32m#X obj 111 98 t f f, f 17;[m
+[32m+[m[32m#X connect 0 0 8 0;[m
+[32m+[m[32m#X connect 1 0 7 0;[m
+ #X connect 2 0 5 0;[m
+ #X connect 3 0 4 0;[m
+ #X connect 5 0 3 0;[m
+ #X connect 6 0 2 0;[m
+[31m-#X connect 7 0 6 0;[m
+[31m-#X connect 7 1 8 0;[m
+[31m-#X connect 8 0 2 1;[m
+[32m+[m[32m#X connect 7 0 2 1;[m
+[32m+[m[32m#X connect 8 0 6 0;[m
+[32m+[m[32m#X connect 8 1 7 0;[m
+ #X restore 332 109 pd nor;[m
+ #X f 10;[m
+ #X obj 332 78 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0[m
+ 1;[m
+ #X floatatom 332 175 5 0 0 0 - - -;[m
+[31m-#X obj 172 130 t i;[m
+[31m-#X obj 292 131 t i;[m
+[32m+[m[32m#X obj 172 130 t f;[m
+[32m+[m[32m#X obj 292 131 t f;[m
+ #X connect 0 0 2 0;[m
+ #X connect 0 0 6 0;[m
+ #X connect 1 0 0 0;[m
